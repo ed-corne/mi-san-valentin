@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz San Valentín</title>
+    <link rel="icon" type="image/png" href="./assets/icono.png" />
+    <link rel="stylesheet" href="styles8.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="encabezado-container">
+        <h2 id="brillo">Todos bonitos preciosos 💞</h2>
+        <h2 id="brillo">💞 Mi novia la más hermosa</hs>
+      </div>
+
+      <div class="galeria">
+        <img src="./assets/m1.jpg" class="active" />
+        <img src="./assets/m2.jpg" />
+        <img src="./assets/m3.jpg" />
+        <img src="./assets/m4.jpg" />
+        <img src="./assets/m5.jpg" />
+        <img src="./assets/m6.jpg" />
+        <img src="./assets/m7.jpg" />
+        <img src="./assets/m8.jpg" />
+        <img src="./assets/m9.jpg" />
+        <img src="./assets/m10.jpg" />
+        <img src="./assets/m11.jpg" />
+        <img src="./assets/m12.jpg" />
+        <img src="./assets/m13.jpg" />
+        <img src="./assets/m14.jpg" />
+        <img src="./assets/m15.jpg" />
+        <img src="./assets/m16.jpg" />
+        <img src="./assets/m17.jpg" />
+        <img src="./assets/m18.jpg" />
+        <img src="./assets/m19.jpg" />
+        <img src="./assets/m20.jpg" />
+      </div>
+     
+      <a href="page9.html" class="btn fade-in delay-2">siguiente</a>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".galeria img");
+        let currentIndex = 0;
+
+        function changeImage() {
+          images[currentIndex].classList.remove("active");
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add("active");
+        }
+
+        setInterval(changeImage, 2000);
+      });
+    </script>
+  </body>
+</html>
